@@ -89,7 +89,8 @@ a:hover {
 
 /*Contenedor uno*/
 
-.parte1 {
+.parte1,
+.parte2 {
     margin: 18px auto;
 }
 
@@ -114,7 +115,7 @@ a:hover {
     grid-row: 1px;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 600px) {
     .contenedor1 {
         width: 60%;
         height: 360px;
@@ -130,20 +131,18 @@ img {
 }
 
 .main {
-    display: flex;
-}
-
-.main {
     width: 70%;
+    background-color: white;
+    display: flex;
 }
 
 .aside {
     width: 20%;
     background-color: white;
-    display: flex;
+    margin: 0 15px;
 }
 
-@media (min-width: 300px) {
+@media (min-width: 400px) {
     .main {
         width: 70%;
         float: left;
@@ -161,11 +160,6 @@ img {
 
 
 /*Caracteristicas*/
-
-.main2 {
-    background-color: white;
-    padding: 30px 20px;
-}
 
 .datos {
     background-color: white;
@@ -203,6 +197,10 @@ input#Descripcion:checked~article#Des {
 
 /*Articulos similares*/
 
+.Inf {
+    font-size: 10px
+}
+
 .Articulos {
     background-color: white;
     padding: 10px;
@@ -229,35 +227,28 @@ input#Descripcion:checked~article#Des {
     font-size: 20px;
 }
 
-@media (min-width:300px) {
-    .main2 {
-        width: 70%;
-        float: left;
-        padding-right: 40px;
-    }
-    .aside2 {
-        width: 20%;
-        float: right;
-        padding: 0;
-    }
-}
-
 .main2 {
     width: 70%;
+    background-color: white;
 }
 
 .aside2 {
     width: 20%;
     text-align: justify;
+    background-color: white;
+    font-size: 10px;
 }
 
-
-/*Mas informacion*/
-
-.aside2 {
-    background-color: white;
-    margin-bottom: 50px;
-    text-align: justify;
+@media (min-width:400px) {
+    .main2 {
+        width: 70%;
+        float: left;
+    }
+    .aside2 {
+        width: 20%;
+        float: left;
+        margin: 0 15px;
+    }
 }
 
 
@@ -288,7 +279,7 @@ input#Descripcion:checked~article#Des {
     widows: 50%;
 }
 
-@media (min-width:300px) {
+@media (min-width:400px) {
     .nosotrosF {
         float: left;
         width: 50%;
